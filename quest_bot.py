@@ -1,4 +1,3 @@
-
 import json
 import os
 from telegram import Update
@@ -35,7 +34,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     code = args[0].lower()
-
     if code in FAKE_CODES:
         await update.message.reply_text("😅 Це фейковий код! Шукай далі справжні частини.")
         return
